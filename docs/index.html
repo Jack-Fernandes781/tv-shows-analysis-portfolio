@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Shows Analysis Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <h1>TV Shows <span class="accent">Analysis</span> Portfolio</h1>
+    <p>Comprehensive data analytics project analyzing 2,500+ television shows to uncover insights about content trends, viewer preferences, and industry patterns.</p>
+    <div class="links">
+      <a class="btn btn-primary" href="https://github.com/Jack-Fernandes781/tv-shows-analysis-portfolio">View on GitHub</a>
+      <a class="btn btn-outline" href="https://github.com/Jack-Fernandes781/tv-shows-analysis-portfolio/blob/main/TV_Shows_Analysis_Portfolio.ipynb">View Notebook</a>
+    </div>
+  </div>
+</header>
+
+<!-- Key Metrics -->
+<div class="container">
+  <div class="metrics">
+    <div class="metric"><div class="value">2,519</div><div class="label">Shows Analyzed</div></div>
+    <div class="metric"><div class="value">7.34</div><div class="label">Avg Rating</div></div>
+    <div class="metric"><div class="value">28</div><div class="label">Unique Genres</div></div>
+    <div class="metric"><div class="value">60</div><div class="label">Shows Rated 8.5+</div></div>
+  </div>
+</div>
+
+<!-- Visualizations -->
+<div class="container">
+  <section>
+    <h2>Visualizations</h2>
+    <div class="chart-grid">
+
+      <div class="chart-card">
+        <img src="images/ratings_overview.png" alt="Ratings Overview">
+        <div class="caption">Ratings follow a left-skewed distribution centered around 7.3-7.5. Breaking Bad leads at 9.2/10, with HBO dominating the top 10.</div>
+      </div>
+
+      <div class="chart-card">
+        <img src="images/genre_analysis.png" alt="Genre Analysis">
+        <div class="caption">Drama leads in both volume (1,015 shows, 40%) and average quality (7.54). Comedy is second in count but ranks lower in ratings.</div>
+      </div>
+
+      <div class="chart-card">
+        <img src="images/network_analysis.png" alt="Network Analysis">
+        <div class="caption">Clear volume-vs-quality trade-off: broadcast networks (ABC, NBC) produce high volume at ~7.25 avg, while premium networks (Showtime, HBO) achieve 7.7+ with smaller catalogs.</div>
+      </div>
+
+      <div class="chart-card">
+        <img src="images/content_type.png" alt="Content Type Analysis">
+        <div class="caption">Scripted content dominates at 59.8% of shows and the highest avg rating (7.48). Reality TV significantly underperforms at 6.39 avg.</div>
+      </div>
+
+      <div class="chart-card">
+        <img src="images/longevity_analysis.png" alt="Longevity Analysis">
+        <div class="caption">Game shows and soap operas dominate longevity metrics. Jeopardy! leads with 9,090 episodes. Daily/weekly formats enable massive episode counts.</div>
+      </div>
+
+      <div class="chart-card">
+        <img src="images/correlation_heatmap.png" alt="Correlation Heatmap">
+        <div class="caption">Seasons and episodes are strongly correlated (0.665), but rating is largely independent of length or runtime&mdash;content quality matters more than quantity.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key Findings -->
+  <section>
+    <h2>Key Findings</h2>
+    <div class="chart-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+      <div class="chart-card">
+        <div class="caption" style="padding:1.25rem;">
+          <strong style="color:#e2e8f0;font-size:1.05rem;">Premium Wins on Quality</strong><br>
+          HBO, Showtime, and BBC consistently rate 7.7+. The Showtime model (27 shows, 7.86 avg) outperforms ABC (204 shows, 7.24 avg) on quality.
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="caption" style="padding:1.25rem;">
+          <strong style="color:#e2e8f0;font-size:1.05rem;">Scripted Drama Dominates</strong><br>
+          Scripted content outperforms reality TV by 17% in ratings (7.48 vs 6.39). Drama is the most reliable genre for quality content.
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="caption" style="padding:1.25rem;">
+          <strong style="color:#e2e8f0;font-size:1.05rem;">Quality Over Quantity</strong><br>
+          Rating is independent of episode count (r=0.098) and runtime (r=0.089). Individual episode quality matters more than series length.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies -->
+  <section>
+    <h2>Technologies Used</h2>
+    <div class="tech-list">
+      <span class="tech-tag">Python 3.13</span>
+      <span class="tech-tag">pandas</span>
+      <span class="tech-tag">NumPy</span>
+      <span class="tech-tag">Matplotlib</span>
+      <span class="tech-tag">Seaborn</span>
+      <span class="tech-tag">Jupyter Notebook</span>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2026 TV Shows Analysis Portfolio &mdash; <a href="https://github.com/Jack-Fernandes781/tv-shows-analysis-portfolio">GitHub</a></p>
+</footer>
+
+</body>
+</html>
